@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
@@ -27,6 +28,7 @@ public class SearchTests extends TestBase{
 
         step("Type the Artist with results and search", () -> {
             zvukPage.searchPositiveValue(TestData.ArtistValue);
+            sleep(3000);
         });
         step("Check tabs on page with Results", () -> {
             zvukPage.checkTabOnSearchResultsPage(resultTab);
@@ -41,6 +43,7 @@ public class SearchTests extends TestBase{
 
         step("Type the Artist with results and search", () -> {
             zvukPage.searchPositiveValue(TestData.ArtistValue);
+            sleep(3000);
         });
         step("Check that typed artist is in the Artist field", () -> {
             zvukPage.checkArtistResults(ArtistValue);

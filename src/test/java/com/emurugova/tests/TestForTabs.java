@@ -6,6 +6,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
@@ -54,6 +55,7 @@ public class TestForTabs extends TestBase {
 
         step("Open the tab in main menu", () -> {
             zvukPage.openTab(menuItem);
+            sleep(3000);
         });
 
         step("Check the tab page", () -> {
