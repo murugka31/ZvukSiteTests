@@ -1,0 +1,54 @@
+package com.emurugova.tests;
+
+import com.emurugova.pages.ZvukPage;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static com.emurugova.tests.TestData.*;
+import static io.qameta.allure.Allure.step;
+
+public class SearchTests extends TestBase{
+
+    ZvukPage zvukPage = new ZvukPage();
+    @ValueSource(strings = {
+            ALL_TAB,
+            PLAYLISTS_TAB,
+            ARTISTS_TAB ,
+            ALBUMS_TAB,
+            TRACKS_TAB,
+            EPISODES_TAB
+    })
+    @ParameterizedTest
+    void searchArtistWithResultsTest (String resultTab){
+        step("Open main page of Zvuk site", () -> {
+            zvukPage.openPage();
+        });
+
+        step("Type the Artist with results and search", () -> {
+            zvukPage.searchPositiveValue(TestData.ArtistValue);
+        });
+        step("Check tabs on page with Results", () -> {
+            zvukPage.checkTabOnSearchResultsPage(resultTab);
+        });
+
+        step("Check that typed artist is in the Artist field", () -> {
+            zvukPage.checkArtistResults(ArtistValue);
+        });
+    }
+
+    @Test
+    void searchArtistWithoutTest (){
+        step("Open main page of Zvuk site", () -> {
+            zvukPage.openPage();
+        });
+
+        step("Type the Artist without results and search", () -> {
+            zvukPage.searchNegativeValue(TestData.searchNegativeValue);
+        });
+
+        step("Check the page without results", () -> {
+            zvukPage.checkNegativeResults(TestData.searchNegativeResult);
+        });
+    }
+}
