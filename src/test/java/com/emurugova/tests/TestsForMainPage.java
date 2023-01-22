@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
 import com.emurugova.pages.ZvukPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -23,7 +24,7 @@ public class TestsForMainPage extends TestBase {
             RADIO_NAME,
             LIVE_CONCERT_NAME
     })
-
+    @Tag("properties")
     @ParameterizedTest (name = "Check tab for main menu of Zvuk Site: {0}")
     void mainPageOpeningTest (String menuItem){
     step("Open main page of Zvuk site", () -> {
