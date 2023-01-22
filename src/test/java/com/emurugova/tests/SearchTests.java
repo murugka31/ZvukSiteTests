@@ -20,7 +20,7 @@ public class SearchTests extends TestBase{
             EPISODES_TAB
     })
     @ParameterizedTest
-    void searchArtistWithResultsTest (String resultTab){
+    void pageOpeningWithResultsTest (String resultTab) {
         step("Open main page of Zvuk site", () -> {
             zvukPage.openPage();
         });
@@ -31,14 +31,24 @@ public class SearchTests extends TestBase{
         step("Check tabs on page with Results", () -> {
             zvukPage.checkTabOnSearchResultsPage(resultTab);
         });
+    }
 
+     @Test
+     void searchArtistWithResultsTest () {
+        step("Open main page of Zvuk site", () -> {
+         zvukPage.openPage();
+        });
+
+        step("Type the Artist with results and search", () -> {
+            zvukPage.searchPositiveValue(TestData.ArtistValue);
+        });
         step("Check that typed artist is in the Artist field", () -> {
             zvukPage.checkArtistResults(ArtistValue);
         });
     }
 
     @Test
-    void searchArtistWithoutTest (){
+    void searchArtistWithoutResultsTest (){
         step("Open main page of Zvuk site", () -> {
             zvukPage.openPage();
         });

@@ -17,7 +17,7 @@ public class TestData {
     public static final String PODCASTS_NAME = "Подкасты";
     public static final String FOR_KIDS_NAME = "Для детей";
     public static final String AUDIOBOOKS_NAME = "Аудиокниги";
-    public static final String RADIO_NAME = "Аудиокниги";
+    public static final String RADIO_NAME = "Радио";
     public static final String LIVE_CONCERT_NAME = "Live-концерты";
 
 //Tab Heading
