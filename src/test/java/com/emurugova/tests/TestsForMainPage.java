@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
 import com.emurugova.pages.ZvukPage;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -8,6 +9,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
+@Feature("Main page test")
 public class TestsForMainPage extends TestBase {
 
     ZvukPage zvukPage = new ZvukPage();

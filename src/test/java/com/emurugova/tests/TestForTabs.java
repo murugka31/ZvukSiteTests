@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
 import com.emurugova.pages.ZvukPage;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -10,6 +11,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
+@Feature("Main menu tabs test")
 public class TestForTabs extends TestBase {
 
     ZvukPage zvukPage = new ZvukPage();

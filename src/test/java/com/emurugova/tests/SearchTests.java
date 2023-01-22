@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
 import com.emurugova.pages.ZvukPage;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -9,6 +10,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
+@Feature("Search")
 public class SearchTests extends TestBase{
 
     ZvukPage zvukPage = new ZvukPage();
