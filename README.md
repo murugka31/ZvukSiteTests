@@ -19,7 +19,7 @@ gradle clean test
 
 Run tests with not filled remote.properties:
 ```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
+gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/  test
 ```
 
 Serve report:
@@ -27,5 +27,5 @@ Serve report:
 allure serve build/allure-results
 ```
 
-:heart: <a target="_blank" href="https://github.com/murugka31</a><br/>
+:heart: <a target="_blank" href="https://github.com/murugka31">github.com/murugka31</a><br/>
 
