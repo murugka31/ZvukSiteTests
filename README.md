@@ -1,4 +1,8 @@
-# Проект для интернет-сервиса zvuk.com
+<a href="https://zvuk.com/">
+    <img src="https://user-images.githubusercontent.com/118747260/214104170-3a41b016-8562-4707-b03f-a80fcbb58740.jpg" alt="Zvuk logo" title="Zvuk" align="right" height="130" />
+</a>
+
+## Проект для интернет-сервиса zvuk.com
 
 [Zvuk](https://zvuk.com/) - Это аудиосервис, который с вами на одной волне и дополняет каждый момент жизни подходящим звуковым сопровождением.
 
