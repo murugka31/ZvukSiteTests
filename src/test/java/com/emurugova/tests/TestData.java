@@ -3,7 +3,7 @@ package com.emurugova.tests;
 public class TestData {
 
     public static String baseURL = "https://zvuk.com";
-    public static String ArtistValue = "Bssdvsvsdvsdvs";
+    public static String ArtistValue = "Bon Jovi";
     public static String searchNegativeValue = "Bsbzsfbsdfbzdbdfbdfb";
     public static String searchNegativeResult = "Не слышали о таком ;(";
 
