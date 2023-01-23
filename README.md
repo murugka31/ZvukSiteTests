@@ -1,6 +1,7 @@
 # Project for Zvuk Site: zvuk.com
 
 [Zvuk](https://zvuk.com/) - это интернет-сервис потокового аудио, позволяющий слушать музыку, подкасты и аудиокниги.
+Это аудиосервис, который с вами на одной волне и дополняет каждый момент жизни подходящим звуковым сопровождением.
 
 # Project in Allure TestOps with manual & automated tests 
 <a target="_blank" href="https://allure.autotests.cloud/project/1830/">allure.autotests.cloud/project/1830</a> 
