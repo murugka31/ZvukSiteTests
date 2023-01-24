@@ -2,6 +2,7 @@ package com.emurugova.tests;
 
 import com.emurugova.pages.ZvukPage;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -37,6 +38,7 @@ public class SearchTests extends TestBase{
         });
     }
 
+     @Tag("searchtest")
      @Test
      void searchArtistWithResultsTest () {
         step("Open main page of Zvuk site", () -> {
@@ -52,6 +54,7 @@ public class SearchTests extends TestBase{
         });
     }
 
+    @Tag("searchtest")
     @Test
     void searchArtistWithoutResultsTest (){
         step("Open main page of Zvuk site", () -> {

@@ -55,8 +55,8 @@ tasks.withType(Test) {
     }
 }
 
-task properties_tests(type: Test) {
+task search_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "properties"
+        includeTags "searchtest"
     }
 }
