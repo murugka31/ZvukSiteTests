@@ -1,10 +1,11 @@
 <a href="https://zvuk.com/">
-    <img src="https://user-images.githubusercontent.com/118747260/214104170-3a41b016-8562-4707-b03f-a80fcbb58740.jpg" alt="Zvuk logo" title="Zvuk" align="right" height="130" />
+    <img src="https://user-images.githubusercontent.com/118747260/214104170-3a41b016-8562-4707-b03f-a80fcbb58740.jpg" alt="Zvuk logo" title="Zvuk" align="left" height="130" />
 </a>
 
 ## Проект для интернет-сервиса ZVUK.com
 
 [Zvuk](https://zvuk.com/) - это аудиосервис, который с вами на одной волне и дополняет каждый момент жизни подходящим звуковым сопровождением.
+Музыка, подкасты, аудиокниги, радио - вся магия звука в одном приложении.
 
 ![2023-01-23_18-46-02](https://user-images.githubusercontent.com/118747260/214087786-09b44311-0acc-479e-9be5-50260fb1d003.png)
 
@@ -16,9 +17,9 @@
 ## :point_right:  Jenkins job c Allure Report с результатами пройденной сборки.
 <a target="_blank" href="https://jenkins.autotests.cloud/job/08-murugka31-ZvukSite/">jenkins.autotests.cloud/job/08-murugka31-ZvukSite</a>
 В Jenkins запускается сборка с параметрами:
-*	Браузер (chrome, opera, safari)
+* Браузер (chrome, opera, safari)
 * Разрешение браузера (2100x1080,  1920x1080,  1600x1080)
-* Версия браузера (100, 99, 98)
+* Версия браузера
 * Адрес удаленного браузера
 
 В Allure Report отображается вся информация по пройденной сборке
@@ -53,6 +54,16 @@ Serve report:
 ```bash
 allure serve build/allure-results
 ```
+## :point_right: Языки и инструменты
+<h3 align="left">Языки и инструменты, которые были использованы </h3>
+
+| IntelliJ IDEA | Java | Gradle | Junit5 | Selenide |
+|:------:|:----:|:----:|:------:|:------:|
+| <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Intelij_IDEA.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Java.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Gradle.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/JUnit5.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Selenide.png" width="40" height="40"> |
+
+| GitHub | Jenkins | Selenoid | Allure Report | Allure TestOps | Telegram | Jira |
+|:------:|:----:|:----:|:------:|:------:|:--------:|:------:|
+| <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Github.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jenkins.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Selenoid.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Allure_Report.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/AllureTestOps.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Telegram.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jira.png" width="40" height="40"> |
 
 :heart: <a target="_blank" href="https://github.com/murugka31">github.com/murugka31</a><br/>
 
