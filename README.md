@@ -53,7 +53,10 @@ Run tests with filled remote.properties:
 ```bash
 gradle clean test
 ```
-
+Run only Search tests:
+```bash
+gradle clean search_tests
+```
 Serve report:
 ```bash
 allure serve build/allure-results
