@@ -2,6 +2,10 @@
     <img src="https://user-images.githubusercontent.com/118747260/214104170-3a41b016-8562-4707-b03f-a80fcbb58740.jpg" alt="Zvuk logo" title="Zvuk" align="left" height="130" />
 </a>
 
+<p align="left">
+<img src="https://readme-typing-svg.herokuapp.com?color=9152C0&font=Oswald&size=30&center=true&vCenter=true&lines=++Стриминговый-сервис+ZVUK.com+++">
+</p>
+
 ## Проект для интернет-сервиса ZVUK.com
 
 [Zvuk](https://zvuk.com/) - это аудиосервис, который с вами на одной волне и дополняет каждый момент жизни подходящим звуковым сопровождением.
