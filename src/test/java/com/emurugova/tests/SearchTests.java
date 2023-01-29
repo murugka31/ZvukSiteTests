@@ -35,7 +35,7 @@ public class SearchTests extends TestBase{
 
         step("Type the Artist with results and search", () -> {
             resultPage.searchPositiveValue(TestData.ArtistValue);
-            sleep(3000);
+            sleep(5000);
         });
         step("Check tabs on page with Results", () -> {
             resultPage.checkTabOnSearchResultsPage(resultTab);

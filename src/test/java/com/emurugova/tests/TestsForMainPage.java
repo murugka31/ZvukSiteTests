@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import static com.codeborne.selenide.Selenide.sleep;
 import static com.emurugova.tests.TestData.*;
 import static io.qameta.allure.Allure.step;
 
@@ -31,6 +32,7 @@ public class TestsForMainPage extends TestBase {
     void mainPageOpeningTest (String menuItem){
     step("Open main page of Zvuk site", () -> {
         mainPage.openPage();
+        sleep(5000);
     });
 
     step("Check the main page", () -> {
