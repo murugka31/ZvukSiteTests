@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
-import com.emurugova.pages.ZvukPage;
+import com.emurugova.pages.MainPage;
+import com.emurugova.pages.ResultPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,9 @@ import static io.qameta.allure.Allure.step;
 @Feature("Search")
 public class SearchTests extends TestBase{
 
-    ZvukPage zvukPage = new ZvukPage();
+    MainPage mainPage = new MainPage();
+    ResultPage resultPage = new ResultPage();
+
     @ValueSource(strings = {
             ALL_TAB,
             PLAYLISTS_TAB,
@@ -26,15 +29,15 @@ public class SearchTests extends TestBase{
     @ParameterizedTest
     void pageOpeningWithResultsTest (String resultTab) {
         step("Open main page of Zvuk site", () -> {
-            zvukPage.openPage();
+            mainPage.openPage();
         });
 
         step("Type the Artist with results and search", () -> {
-            zvukPage.searchPositiveValue(TestData.ArtistValue);
+            resultPage.searchPositiveValue(TestData.ArtistValue);
             sleep(3000);
         });
         step("Check tabs on page with Results", () -> {
-            zvukPage.checkTabOnSearchResultsPage(resultTab);
+            resultPage.checkTabOnSearchResultsPage(resultTab);
         });
     }
 
@@ -42,15 +45,15 @@ public class SearchTests extends TestBase{
      @Test
      void searchArtistWithResultsTest () {
         step("Open main page of Zvuk site", () -> {
-         zvukPage.openPage();
+         mainPage.openPage();
         });
 
         step("Type the Artist with results and search", () -> {
-            zvukPage.searchPositiveValue(TestData.ArtistValue);
+            resultPage.searchPositiveValue(TestData.ArtistValue);
             sleep(3000);
         });
         step("Check that typed artist is in the Artist field", () -> {
-            zvukPage.checkArtistResults(ArtistValue);
+            resultPage.checkArtistResults(ArtistValue);
         });
     }
 
@@ -58,15 +61,15 @@ public class SearchTests extends TestBase{
     @Test
     void searchArtistWithoutResultsTest (){
         step("Open main page of Zvuk site", () -> {
-            zvukPage.openPage();
+            mainPage.openPage();
         });
 
         step("Type the Artist without results and search", () -> {
-            zvukPage.searchNegativeValue(TestData.searchNegativeValue);
+            resultPage.searchNegativeValue(TestData.searchNegativeValue);
         });
 
         step("Check the page without results", () -> {
-            zvukPage.checkNegativeResults(TestData.searchNegativeResult);
+            resultPage.checkNegativeResults(TestData.searchNegativeResult);
         });
     }
 }

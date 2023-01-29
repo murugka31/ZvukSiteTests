@@ -1,6 +1,7 @@
 package com.emurugova.tests;
 
-import com.emurugova.pages.ZvukPage;
+import com.emurugova.pages.MainPage;
+import com.emurugova.pages.TabPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -14,7 +15,8 @@ import static io.qameta.allure.Allure.step;
 @Feature("Main menu tabs test")
 public class TestForTabs extends TestBase {
 
-    ZvukPage zvukPage = new ZvukPage();
+    MainPage mainPage = new MainPage();
+    TabPage tabPage = new TabPage();
 
     static Stream<Arguments> tabOpeningTest () {
         return Stream.of(
@@ -52,16 +54,16 @@ public class TestForTabs extends TestBase {
     @ParameterizedTest(name = "Check the heading of tab page: {0}")
     void tabOpeningTest (String menuItem, String tabItem){
         step("Open main page of Zvuk site", () -> {
-            zvukPage.openPage();
+            mainPage.openPage();
         });
 
         step("Open the tab in main menu", () -> {
-            zvukPage.openTab(menuItem);
+            mainPage.openTab(menuItem);
             sleep(3000);
         });
 
         step("Check the tab page", () -> {
-            zvukPage.checkTabPage(tabItem);
+            tabPage.checkTabPage(tabItem);
         });
     }
 }

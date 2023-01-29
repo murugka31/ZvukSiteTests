@@ -1,6 +1,6 @@
 package com.emurugova.tests;
 
-import com.emurugova.pages.ZvukPage;
+import com.emurugova.pages.MainPage;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,7 +12,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Main page test")
 public class TestsForMainPage extends TestBase {
 
-    ZvukPage zvukPage = new ZvukPage();
+    MainPage mainPage = new MainPage();
     @ValueSource(strings = {
             MAIN_NAME,
             WAVE_NAME,
@@ -30,11 +30,11 @@ public class TestsForMainPage extends TestBase {
     @ParameterizedTest (name = "Check tab for main menu of Zvuk Site: {0}")
     void mainPageOpeningTest (String menuItem){
     step("Open main page of Zvuk site", () -> {
-        zvukPage.openPage();
+        mainPage.openPage();
     });
 
     step("Check the main page", () -> {
-        zvukPage.checkMainMenu(menuItem);
+        mainPage.checkMainMenu(menuItem);
     });
     }
 }
