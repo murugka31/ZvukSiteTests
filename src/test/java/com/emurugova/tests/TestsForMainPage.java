@@ -32,7 +32,7 @@ public class TestsForMainPage extends TestBase {
     void mainPageOpeningTest (String menuItem){
     step("Open main page of Zvuk site", () -> {
         mainPage.openPage();
-        sleep(8000);
+        sleep(10000);
     });
 
     step("Check the main page", () -> {
