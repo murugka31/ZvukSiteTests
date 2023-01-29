@@ -56,12 +56,12 @@ public class TestForTabs extends TestBase {
     void tabOpeningTest (String menuItem, String tabItem){
         step("Open main page of Zvuk site", () -> {
             mainPage.openPage();
-            sleep(5000);
+            sleep(7000);
         });
 
         step("Open the tab in main menu", () -> {
             mainPage.openTab(menuItem);
-            sleep(5000);
+            sleep(7000);
         });
 
         step("Check the tab page", () -> {
