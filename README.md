@@ -21,10 +21,18 @@
 ## :point_right:  Jenkins job c Allure Report с результатами пройденной сборки.
 <a target="_blank" href="https://jenkins.autotests.cloud/job/08-murugka31-ZvukSite/">jenkins.autotests.cloud/job/08-murugka31-ZvukSite</a>
 В Jenkins запускается сборка с параметрами:
-* Браузер (chrome, opera, safari)
+* Браузер (Chrome, Opera, Firefox)
 * Разрешение браузера (2100x1080,  1920x1080,  1600x1080)
-* Версия браузера
-* Адрес удаленного браузера
+* Версия браузера (Chrome: 99, 100; Opera: 76, 77; FireFox: 88, 89;)
+* Адрес удаленного браузера (selenoid.autotests.cloud/wd/hub/)
+* Выбор, какие тесты нужно проходить
+    * test - выполнение всех тестов
+    * mainpage_tests - выполнение тестов для главной страницы
+    * tabpage_tests - выполнение тестов для страниц вкладок
+    * searchpage_tests - выполнение тестов для страницы с результатами поиска
+    * search_tests - выполнение тестов для страницы результатов поиска
+* Выбор опции параллельного прохождения тест-кейсов
+* Выбор количества тест-кейсов для параллельного запуска
 
 В Allure Report отображается вся информация по пройденной сборке
 
@@ -48,13 +56,19 @@ https://user-images.githubusercontent.com/118747260/214099269-1882d210-c20e-4ee1
 * browserVersion (default 100.0)
 * browserSize (default 2100x1080)
 * remoteUrl (selenoid.autotests.cloud/wd/hub/)
+* runTest (default test)
+* parallelRun (default true)
+* threadsNumber (default 1)
 
 Run tests with filled remote.properties:
 ```bash
 gradle clean test
 ```
-Run only Search tests:
+Run certain test:
 ```bash
+gradle clean mainpage_tests
+gradle clean tabpage_tests
+gradle clean searchpage_tests
 gradle clean search_tests
 ```
 Serve report:
