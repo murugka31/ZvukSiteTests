@@ -61,6 +61,11 @@ Serve report:
 ```bash
 allure serve build/allure-results
 ```
+
+## :point_right: Пример прогона одного из тест-кейсов
+
+https://user-images.githubusercontent.com/118747260/215312441-7ab966c4-64cd-479e-9351-2159c098abb8.mp4
+
 ## :point_right: Языки и инструменты
 <h3 align="left">Языки и инструменты, которые были использованы </h3>
 
