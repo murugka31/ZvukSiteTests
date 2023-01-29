@@ -58,7 +58,7 @@ https://user-images.githubusercontent.com/118747260/214099269-1882d210-c20e-4ee1
 * remoteUrl (selenoid.autotests.cloud/wd/hub/)
 * runTest (default test)
 * parallelRun (default true)
-* threadsNumber (default 1)
+* threadsNumber (default 4)
 
 Run tests with filled remote.properties:
 ```bash
