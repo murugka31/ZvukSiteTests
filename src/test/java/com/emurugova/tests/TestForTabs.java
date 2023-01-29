@@ -3,6 +3,7 @@ package com.emurugova.tests;
 import com.emurugova.pages.MainPage;
 import com.emurugova.pages.TabPage;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -49,7 +50,7 @@ public class TestForTabs extends TestBase {
                 )
         );
     }
-
+    @Tag("TabPageTest")
     @MethodSource()
     @ParameterizedTest(name = "Check the heading of tab page: {0}")
     void tabOpeningTest (String menuItem, String tabItem){

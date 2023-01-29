@@ -26,7 +26,7 @@ public class TestsForMainPage extends TestBase {
             RADIO_NAME,
             LIVE_CONCERT_NAME
     })
-    @Tag("properties")
+    @Tag("MainPageTest")
     @ParameterizedTest (name = "Check tab for main menu of Zvuk Site: {0}")
     void mainPageOpeningTest (String menuItem){
     step("Open main page of Zvuk site", () -> {
