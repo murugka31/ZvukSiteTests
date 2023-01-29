@@ -50,7 +50,7 @@ public class TestForTabs extends TestBase {
                 )
         );
     }
-    @Tag("TabPageTest")
+    @Tag("tabpagetest")
     @MethodSource()
     @ParameterizedTest(name = "Check the heading of tab page: {0}")
     void tabOpeningTest (String menuItem, String tabItem){

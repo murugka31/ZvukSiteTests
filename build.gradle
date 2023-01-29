@@ -65,21 +65,21 @@ tasks.withType(Test) {
 
 task search_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "SearchTest"
+        includeTags "searchtest"
     }
 }
 task searchpage_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "SearchPageTest"
+        includeTags "searchpagetest"
     }
 }
 task mainpage_tests(type: Test) {
     useJUnitPlatform {
-         includeTags "MainPageTest"
+         includeTags "mainpagetest"
         }
 task tabpage_tests(type: Test) {
     useJUnitPlatform {
-          includeTags "TabPageTest"
+          includeTags "tabpagetest"
         }
     }
 

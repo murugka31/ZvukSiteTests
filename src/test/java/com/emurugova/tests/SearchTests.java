@@ -26,7 +26,7 @@ public class SearchTests extends TestBase{
             TRACKS_TAB,
             EPISODES_TAB
     })
-    @Tag("SearchPageTest")
+    @Tag("searchpagetest")
     @ParameterizedTest
     void pageOpeningWithResultsTest (String resultTab) {
         step("Open main page of Zvuk site", () -> {
@@ -42,7 +42,7 @@ public class SearchTests extends TestBase{
         });
     }
 
-     @Tag("SearchTest")
+     @Tag("searchtest")
      @Test
      void searchArtistWithResultsTest () {
         step("Open main page of Zvuk site", () -> {
@@ -58,7 +58,7 @@ public class SearchTests extends TestBase{
         });
     }
 
-    @Tag("SearchTest")
+    @Tag("searchtest")
     @Test
     void searchArtistWithoutResultsTest (){
         step("Open main page of Zvuk site", () -> {
